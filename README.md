@@ -7,7 +7,7 @@
 
 
 
-# Django E-commerce
+# NyShop
 
 This is a very simple e-commerce website built with Django.
 
@@ -49,8 +49,7 @@ Follow the steps below to get the project up and running on your local machine.
 ```bash
 git clone https://github.com/bobi759/Shop.git
 cd Shop
-pip install virtualenv
-virtualenv env
+python3 -m venv .venv
 ```
 ## For Windows
 ```bash
