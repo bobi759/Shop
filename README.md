@@ -1,15 +1,13 @@
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
 ![Django](https://img.shields.io/badge/Django-4.2.19-green?logo=django)
 ![Django REST](https://img.shields.io/badge/Django%20REST-3.16.0-ff1709?logo=django&logoColor=white&color=ff1709&labelColor=gray)
-
 ![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript)
-![HTML](https://img.shields.io/badge/HTML-orange?logo=html5)
+![HTML](https://img.shields.io/badge/HTML-orange?logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-blue?logo=css3)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-purple?logo=bootstrap&logoColor=white)
 
-![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?logo=sqlite&logoColor=white&style=for-the-badge)
 
-# Django E-commerce
+
+# MyShop
 
 This is a very simple e-commerce website built with Django.
 
@@ -42,5 +40,36 @@ This is a very simple e-commerce website built with Django.
 7. **Order Placement:**  
    After finalizing their cart, users can place an order.
 
+## Installation
+
+Follow the steps below to get the project up and running on your local machine.
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/bobi759/Shop.git
+cd Shop
+python3 -m venv .venv
+```
+## For Windows
+```bash
+env\Scripts\activate
+pip install -r requirements.txt
+```
+If conflict occur, run
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+Run local server
+```bash
+python manage.py runserver
+```
 
 
+## User Login
+You can use already created account with the following credentials
+```bash
+Username : Ivanov@gmail.com
+Password : SecurePass123
+```
