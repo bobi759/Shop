@@ -158,14 +158,12 @@ function postReview() {
     const description = document.getElementById("review-description").value.trim();
 
     if (!title || !description) {
-        // Close the review modal safely
         const reviewModalEl = document.getElementById('reviewModal');
         const reviewModalInstance = bootstrap.Modal.getInstance(reviewModalEl);
         if (reviewModalInstance) {
             reviewModalInstance.hide();
         }
 
-        // Fully clean up modal state after hidden
         reviewModalEl.addEventListener('hidden.bs.modal', function cleanup() {
             $('body').removeClass('modal-open').css('padding-right', '');
             $('.modal-backdrop').remove();
@@ -173,7 +171,6 @@ function postReview() {
 
             showErrorToast("⚠️ Please fill in both the title and description of your review.");
 
-            // Remove this event listener after it runs once
             reviewModalEl.removeEventListener('hidden.bs.modal', cleanup);
         });
 

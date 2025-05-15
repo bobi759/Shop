@@ -3,7 +3,6 @@ from django.contrib import admin
 from Shop.shop_app.models import Book, Genre, Profile, Cart, CartItem, Order, OrderItems, BookReview
 
 
-# Register your models here.
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
     pass

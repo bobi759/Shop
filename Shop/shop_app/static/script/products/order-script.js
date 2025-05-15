@@ -130,7 +130,6 @@ function confirmOrder() {
         const modalInstance = bootstrap.Modal.getInstance(modalEl) || bootstrap.Modal.getOrCreateInstance(modalEl);
         modalInstance.hide();
 
-        // Show error message
         showErrorToast("🛒 Your cart is empty. Please add some books first.");
 
         return;
